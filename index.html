@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="https://bcw.blob.core.windows.net/public/img/9977764104160066">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="assets/style/main.css">
+  <link rel="stylesheet" href="assets/style/style.css">
+  <title>spellbook</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-dark navbar-expand bg-danger text-light no-select">
+      <a class="navbar-brand ms-3 p-3 henny-penny" href="#">
+        <h1 class="m-0">SPELLBOOK</h1>
+      </a>
+    </nav>
+  </header>
+  <main class="container-fluid d-flex flex-column">
+    <div class="row flex-grow-1">
+      <div class="col-md-3 bg-grey p-3">
+        <h3 class="henny-penny">All Spells</h3>
+        <div class="m-2 spell-scroll" id="dnd-spells">
+          <i class="mdi mdi-loading mdi-spin"></i>
+        </div>
+      </div>
+      <div class="col-md-6 d-flex justify-content-center py-5" id='active-spell'>
+        <!-- <div class="w-75 bg-white elevation-1 p-3 d-flex flex-column">
+          <div class="text-center">
+            <h3>SPELL NAME</h3>
+            <p><b>Range:</b> RANGE | <b>Duration:</b> DURATION | <b>Level:</b> LEVEL</p>
+            <p><b>Components:</b> [ V, S, M ]</p>
+          </div>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus officiis odio consectetur alias
+            voluptate error quo tempora eaque eum voluptatem vitae, nesciunt ad. Corporis quis expedita repudiandae
+            quisquam ad debitis! Nobis modi, est iusto cumque beatae itaque aperiam natus ducimus nihil atque
+            dignissimos minus voluptatem dicta culpa nisi alias, exercitationem ipsam cupiditate? Maiores enim sed
+            laboriosam nesciunt ea magnam laborum.</p>
+          <div class="d-flex justify-content-between justify-self-end mt-auto">
+            <div>
+              <input type="checkbox" name="prepared" id="prepared">
+              <label for="prepared">Prepared</label>
+            </div>
+            <button class="btn btn-success">add</button>
+          </div>
+        </div> -->
+      </div>
+      <div class="col-md-3 bg-grey p-3">
+        <h3 class="henny-penny">My Spells</h3>
+        <div class="m-2 spell-scroll" id="my-spells"></div>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-red border border-dark">
+    <div class="text-center no-select p-2">
+      <p><small>Made with 🌠🧙‍♂️ by Codeworks</small></p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.9/dist/sweetalert2.all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.23.0/axios.min.js"></script>
+  <script src="app/main.js" type="module"></script>
+</body>
+
+</html>

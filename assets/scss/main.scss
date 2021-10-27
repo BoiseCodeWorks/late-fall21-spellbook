@@ -1,0 +1,27 @@
+@import "./_variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "./_overrides.scss";
+@import "./custom.scss";
+@import "./loaders.scss";
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: $body-bg;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.henny-penny {
+  font-family: 'Henny Penny', cursive;
+}
+
+.spell-scroll {
+  height: 80vh;
+  overflow-y: scroll;
+}
+
